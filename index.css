@@ -1,0 +1,165 @@
+body{
+    font-family: "Roboto", "sans-serif";
+    background-color: #212428;
+}
+
+header{
+    position: sticky;
+    z-index: 999999;
+    top: 0;
+}
+
+/* .scrollspy-example {
+    position: relative;
+    height: 300px;
+    overflow: auto;
+} */
+
+.avatar-sidebar{
+    /* width: 100px; */
+    /* height: 100px; */
+    border-radius: 50%;
+    background-color: white;
+}
+
+.sidebar{
+    background-color: #191B1F;
+    padding: 20px 0;
+}
+
+.background-color-1{
+    background-color: #212428;
+}
+
+.shadow-1{
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+
+.text-color-1{
+    color: #fff;
+}
+
+.text-color-2{
+    color: #c4cfde;
+}
+
+.text-color-3{
+    color: #878e99;
+}
+
+.text-color-4{
+    color: #E8DE2A;
+}
+
+.hover-link:hover{
+    color: #E8DE2A;
+}
+
+.info-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e8df2a29;
+    line-height: 50px;
+    text-align: center;
+}
+
+.background-color-button-1{
+    background: linear-gradient(to right bottom, #212428, #16181c);
+}
+
+.font-size-14{
+    font-size: 14px;
+}
+
+.timeline-with-icons {
+    border-left: 1px solid hsl(0, 0%, 90%);
+    position: relative;
+    list-style: none;
+}
+
+.timeline-with-icons .timeline-item {
+  position: relative;
+}
+
+.timeline-with-icons .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+  
+.timeline-with-icons .timeline-icon {
+    position: absolute;
+    left: -54px;
+    background-color: #212428;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    /* background-color: hsl(217, 88.2%, 90%); */
+    /* color: hsl(217, 88.8%, 35.1%); */
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active{
+    color: #E8DE2A !important;
+    background-color: #222529 !important;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+
+.nav-item .nav-link:hover{
+    color: #E8DE2A !important;
+}
+
+.pswp--custom-bg {
+    --pswp-bg: #000000;
+}
+
+
+/* #home{
+    margin-top: 180px;
+    margin-bottom: 100px;
+} */
+
+
+/* @media only screen and (max-height: 640px) {
+    #home{
+        margin-top: 50px;
+    }
+} */
+
+
+
+@media screen and (max-width: 992px) {
+    .avatar-sidebar{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* @media screen and (max-width: 992px) {
+    .avatar-sidebar{
+        width: 80px;
+        height: 80px;
+    }
+} */
+
+@media screen and (min-width: 992px) {
+    .avatar-sidebar{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .home-small-display-none{
+        display: none;
+    }
+
+    .avatar-sidebar{
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -1,11 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,700&display=swap"
+    rel="stylesheet">
+  <!-- font -->
+
+  <!-- photoswipe -->
+  <link rel="stylesheet" href="./photoswipe/dist/photoswipe.css">
+  <!-- photoswipe -->
+
+  <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-    <h1>My Profile :))</h1>
+  <header class="sidebar shadow-1 rounded">
+    <nav id="menu" class="navbar navbar-expand-lg h-100" style="max-height: 100%;">
+      <div class="container-fluid h-100">
+        <p class="navbar-brand">Navbar</p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarSupportedContent">
+          <ul class="nav navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item me-3">
+              <a class="nav-link px-3 rounded text-color-3" href="#home">Home</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link px-3 rounded text-color-3" href="#about">About Me</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link px-3 rounded text-color-3" href="#my-resume">My Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 rounded text-color-3" href="#pastimes-activities">Pastimes Activities</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container overflow-y-auto w-100 scrollspy-example p-3 rounded-2" data-bs-spy="scroll"
+    data-bs-target="#menu" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+    <!-- Home more than xl or equal size with xl -->
+    <section id="home" style="margin: 100px 0px;">
+      <div class="d-sm-none d-xl-block home-small-display-none">
+        <div class="row justify-content-center w-100 m-auto gx-5">
+          <!-- Left -->
+          <div class="col-xl-6">
+            <div class="py-5 px-4 background-color-1 shadow-1 rounded">
+              <div class="text-color-4 fs-2 info-icon mb-2">
+                <i class="fa fa-user-circle"></i>
+              </div>
+              <h1 class="fw-bold fs-1">
+                <span class="text-color-1">Hi, I'm </span>
+                <span class="text-color-4">Hoang NT</span>
+              </h1>
+              <p class="text-color-2 fs-5">Web developer working for Cyberlogitec Viet Nam.</p>
+              <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-sm-start fs-5">
+                <li class="text-color-4 mb-2 w-100">
+                  <div class="align-middle px-0">
+                    <i class="fa fa-file"></i> <span class="ms-1">Web designer & developer</span>
+                  </div>
+                </li>
+                <li class="text-color-4 mb-2">
+                  <div class="align-middle px-0 w-100">
+                    <i class="fa fa-envelope"></i> <span class="ms-1">nguyentranhoang916@gmail.com</span>
+                  </div>
+                </li>
+                <li class="text-color-4 mb-2">
+                  <div class="align-middle px-0 w-100">
+                    <i class="fa fa-map-marker-alt"></i> <span class="ms-1">HCMC</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="py-5 px-4 background-color-1 shadow-1 rounded mt-5 ">
+              <p class="text-color-3 fs-5">Download my curriculum vitae:</p>
+              <button class="py-1 px-2 fs-6 text-color-4 fw-medium background-color-button-1 rounded-2 me-2">DOWNLOAD
+                CV</button>
+              <button class="py-1 px-2 fs-6 text-color-4 fw-medium background-color-button-1 rounded-2">CONTACT
+                ME</button>
+            </div>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div class="col-xl-6 p-xl-5 background-color-1 shadow-1">
+            <!-- <img class="w-100 h-100 img-fluid" src="./images/hoang_fb.jpg" alt="hoang_fb.jpg" /> -->
+            <img class="img-fluid" src="./images/hoang_dalat.jpg" alt="hoang_fb.jpg" />
+          </div>
+          <!-- Right -->
+        </div>
+      </div>
+      <!-- Home more than xl or equal size with xl -->
+
+      <!-- Home more than lg or equal size with lg -->
+      <div class="d-sm-block d-xl-none">
+        <div class="">
+          <!-- Left -->
+          <div class="col-sm-12 py-5 px-4 background-color-1 shadow-1">
+            <img class="img-fluid" src="./images/hoang_dalat.jpg" alt="hoang_fb.jpg" />
+          </div>
+          <!-- Left -->
+          <!-- Right -->
+          <div class="col-sm-12 mt-5">
+            <div class="py-5 px-4 background-color-1 shadow-1 rounded">
+              <div class="text-color-4 fs-2 info-icon mb-2">
+                <i class="fa fa-user-circle"></i>
+              </div>
+              <h1 class="fw-bold fs-3 lh-lg">
+                <span class="text-color-1">Hi, I'm </span>
+                <span class="text-color-4">Hoang NT</span>
+              </h1>
+              <p class="text-color-2 fs-6">Web developer working for Cyberlogitec Viet Nam.</p>
+              <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-sm-start fs-6">
+                <li class="text-color-4 mb-2 w-100">
+                  <div class="align-middle px-0">
+                    <i class="fa fa-file"></i> <span class="ms-1">Web designer & developer</span>
+                  </div>
+                </li>
+                <li class="text-color-4 mb-2">
+                  <div class="align-middle px-0 w-100">
+                    <i class="fa fa-envelope"></i> <span class="ms-1">nguyentranhoang916@gmail.com</span>
+                  </div>
+                </li>
+                <li class="text-color-4 mb-2">
+                  <div class="align-middle px-0 w-100">
+                    <i class="fa fa-map-marker-alt"></i> <span class="ms-1">HCMC</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="py-5 px-4 background-color-1 shadow-1 rounded mt-5 ">
+              <p class="text-color-3 fs-5">Download my curriculum vitae:</p>
+              <button
+                class="py-1 px-2 font-size-14 text-color-4 fw-medium background-color-button-1 rounded-2 me-2">DOWNLOAD
+                CV</button>
+              <button class="py-1 px-2 font-size-14 text-color-4 fw-medium background-color-button-1 rounded-2">CONTACT
+                ME</button>
+            </div>
+          </div>
+          <!-- Right -->
+        </div>
+      </div>
+      <!-- Home more than lg or equal size with lg -->
+    </section>
+
+    <!-- About -->
+    <section id="about" class="p-xl-5 mt-sm-5">
+      <h1 class="text-color-4 fs-1 text-center">About Me</h1>
+      <p class="text-color-2 fs-6 text-center mb-5">LESS 3 YEARS OF EXPERIENCE</p>
+      <div class="card mb-3 m-auto background-color-1 shadow-1 rounded">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./images/hoang_study.jpg" alt="hoang_study.jpg" class="img-fluid rounded-start">
+          </div>
+          <div class="col-md-8 text-color-2">
+            <div class="card-body">
+              <h5 class="card-title">Nguyễn Trần Hoàng</h5>
+              <h5 class="card-title">Java Developer</h5>
+              <p class="card-text">
+                I’m a developer with 2.5 years of experience in building application, with good knowledge of
+                Programming.</br>
+                I love learning new technologies and building valuable application that helps others with their work.
+                I’m considered a team-player because I like to help other and tend to work well within the group.
+              </p>
+              <p class="card-text"><small>Updated on 7/21/2023</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+
+    <!-- Resume -->
+    <section id="my-resume" class="p-lg-5 mt-sm-5">
+      <h1 class="text-color-4 fs-1 text-center mb-5">My Resume</h1>
+      <ul class="nav nav-pills mb-3 background-color-1 shadow-1 rounded p-3 mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item me-5" role="presentation">
+          <button class="nav-link fs-4 active text-color-2 py-2" id="pills-education-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-education" type="button" role="tab" aria-controls="pills-education"
+            aria-selected="true">Education </button>
+        </li>
+        <li class="nav-item  me-5" role="presentation">
+          <button class="nav-link fs-4 text-color-2 py-2" id="pills-professional-skill-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-professional-skill" type="button" role="tab" aria-controls="pills-professional-skill"
+            aria-selected="false">Professional Skill</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fs-4 text-color-2 py-2" id="pills-experience-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-experience" type="button" role="tab" aria-controls="pills-experience"
+            aria-selected="false">Experience</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <!-- Education tab -->
+        <div class="tab-pane fade show active text-light background-color-1 shadow-1 rounded py-3" id="pills-education"
+          role="tabpanel" aria-labelledby="pills-education-tab" tabindex="0">
+          <ul class="timeline-with-icons">
+            <li class="timeline-item mb-5">
+              <span class="timeline-icon">
+                <i class="fa fa-university fs-5 text-color-4"></i>
+              </span>
+              <h5 class="fw-bold text-color-1 lh-1">Studied at the University of Economics and Finance</h5>
+              <p class="text-color-2 mb-2 fw-bold">University of Studies (2018 - 2022)</p>
+              <p class="text-color-3">
+                In University, I learned about technology, computer science, data science, mathematical tools, and
+                applied statistics.
+              </p>
+              <p class="text-color-3">
+                I have acquired the essential abilities and attitudes to work in and adapt to the quickly changing
+                environment of financial institutions and financial technology businesses.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <span class="timeline-icon">
+                <i class="fa fa-cube fs-5 text-color-4"></i>
+                <!-- <i class="fas fa-hand-holding-usd text-primary fa-sm fa-fw"></i> -->
+              </span>
+              <h5 class="fw-bold text-color-1 lh-lg"> Join the short course in CYBERSOFT - ĐÀO TẠO CHUYÊN GIA LẬP TRÌNH
+              </h5>
+              <p class="text-color-2 mb-2 fw-bold">Join the short course (2020 - 2021)</p>
+              <p class="text-color-3">
+                Here I get to practice and learn about programming tools and soft skills.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!-- Education tab -->
+
+        <!-- Professional Skill -->
+        <div class="tab-pane fade text-light background-color-1 shadow-1 rounded py-3" id="pills-professional-skill"
+          role="tabpanel" aria-labelledby="pills-professional-skill-tab" tabindex="0">
+          <div class="row justify-content-center w-100 m-auto gx-5">
+            <!-- Left -->
+            <div class="col-sm-12 col-lg-6">
+              <h2 class="text-color-2 fs-2 mt-3">Programming Languages</h2>
+              <ul class="list-unstyled">
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between text-color-3">
+                    <p>JAVA</p>
+                    <p class="text-end">50%</p>
+                  </div>
+                  <div class="progress mb-4" role="progressbar" aria-label="Warning striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 50%;"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between text-color-3">
+                    <p>HTML</p>
+                    <p class="text-end">50%</p>
+                  </div>
+                  <div class="progress mb-4" role="progressbar" aria-label="Warning striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 50%;"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between text-color-3">
+                    <p>CSS</p>
+                    <p class="text-end">50%</p>
+                  </div>
+                  <div class="progress mb-4" role="progressbar" aria-label="Warning striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 50%;"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between text-color-3">
+                    <p>JavaScript</p>
+                    <p class="text-end">50%</p>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 50%;"></div>
+                  </div>
+                </li>
+              </ul>
+
+              <h2 class="text-color-2 fs-2 mt-5">Version Control</h2>
+              <ul class="list-unstyled">
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between text-color-3">
+                    <p>Github</p>
+                    <p class="text-end">50%</p>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 50%;"></div>
+                  </div>
+                </li>
+              </ul>
+
+              <h2 class="text-color-2 fs-2 mt-5">Soft Skills</h2>
+              <ul class="list-unstyled">
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between text-color-3">
+                    <p>Teamwork - Highly adaptable</p>
+                    <p class="text-end">70%</p>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 70%;"></div>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div class="col-sm-12 col-lg-6">
+              <h2 class="text-color-2 fs-2 mt-3">Frameworks / Platforms</h2>
+              <ul class="list-unstyled">
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between text-color-3">
+                    <p>Spring Boot</p>
+                    <p class="text-end">50%</p>
+                  </div>
+                  <div class="progress mb-4" role="progressbar" aria-label="Warning striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 50%;"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between text-color-3">
+                    <p>Twitter Bootstrap</p>
+                    <p class="text-end">50%</p>
+                  </div>
+                  <div class="progress mb-4" role="progressbar" aria-label="Warning striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 50%;"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between text-color-3">
+                    <p>ReactJS-Redux</p>
+                    <p class="text-end">50%</p>
+                  </div>
+                  <div class="progress mb-4" role="progressbar" aria-label="Warning striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 50%;"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between text-color-3">
+                    <p>Nodejs(ExpressJs)</p>
+                    <p class="text-end">50%</p>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 50%;"></div>
+                  </div>
+                </li>
+              </ul>
+
+              <h2 class="text-color-2 fs-2 mt-5">Database</h2>
+              <ul class="list-unstyled">
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between text-color-3">
+                    <p>Postgresql</p>
+                    <p class="text-end">50%</p>
+                  </div>
+                  <div class="progress mb-4" role="progressbar" aria-label="Warning striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 50%;"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between text-color-3">
+                    <p>Oracle</p>
+                    <p class="text-end">50%</p>
+                  </div>
+                  <div class="progress mb-4" role="progressbar" aria-label="Warning striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 50%;"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between text-color-3">
+                    <p>Neo4J</p>
+                    <p class="text-end">50%</p>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 50%;"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Right -->
+
+          </div>
+        </div>
+        <!-- Professional Skill -->
+
+        <!-- Experience -->
+        <div class="tab-pane fade text-light background-color-1 shadow-1 rounded py-3" id="pills-experience"
+          role="tabpanel" aria-labelledby="pills-experience-tab" tabindex="0">
+          <ul class="timeline-with-icons">
+            <li class="timeline-item mb-5">
+              <span class="timeline-icon">
+                <i class="fa fa-laptop-code fs-5 text-color-4"></i>
+              </span>
+              <h5 class="fw-bold text-color-1 lh-1">Join Jwat in Cyberlogitec Viet Nam</h5>
+              <p class="text-color-2 fw-bold">Part-time</p>
+              <p class="text-color-3">10/2020 - 02/2021</p>
+              <p class="text-color-3">19A Cong Hoa Street, Tan Binh District HCMC · On-site</p>
+            </li>
+
+            <li class="timeline-item mb-5">
+              <span class="timeline-icon">
+                <i class="fa fa-hand-holding-usd fs-5 text-color-4"></i>
+              </span>
+              <h5 class="fw-bold text-color-1 lh-1"> Join in Cyberlogitec Viet Nam</h5>
+              <p class="text-color-2 fw-bold">Part-time</p>
+              <p class="text-color-3">03/2021 - 04/2022</p>
+              <p class="text-color-3">19A Cong Hoa Street, Tan Binh District HCMC · On-site</p>
+            </li>
+
+            <li class="timeline-item">
+              <span class="timeline-icon">
+                <i class="fa fa-hand-holding-usd fs-5 text-color-4"></i>
+              </span>
+              <h5 class="fw-bold text-color-1 lh-1"> Join in Cyberlogitec Viet Nam</h5>
+              <p class="text-color-2 fw-bold">Full-time</p>
+              <p class="text-color-3">04/2022 - present</p>
+              <p class="text-color-3">19A Cong Hoa Street, Tan Binh District HCMC · On-site</p>
+            </li>
+          </ul>
+        </div>
+        <!-- Experience -->
+      </div>
+    </section>
+    <!-- Resume -->
+
+    <!-- PASTIMES ACTIVITIES -->
+    <!-- reference: https://photoswipe.com/options -->
+    <section id="pastimes-activities" class="p-lg-5 mt-sm-5">
+      <h1 class="text-color-4 fs-1 text-center mb-5">Pastimes Activities</h1>
+      <div class="row" id="my-gallery">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <a href="./images/journey/journey_1.JPG" data-pswp-width="1080px" data-pswp-height="2128px">
+            <img src="./images/journey/journey_1.JPG" alt="" class="w-100 shadow-1-strong rounded mb-4" />
+          </a>
+
+          <a href="./images/journey/journey_5.JPG" data-pswp-width="640px" data-pswp-height="587px">
+            <img src="./images/journey/journey_5.JPG" alt="" class="w-100 shadow-1-strong rounded mb-4" />
+          </a>
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <a href="./images/journey/journey_4.JPG" data-pswp-width="3024px" data-pswp-height="4032px">
+            <img src="./images/journey/journey_4.JPG" class="w-100 shadow-1-strong rounded mb-4"
+              alt="Mountains in the Clouds" />
+          </a>
+          <a href="./images/journey/journey_3.JPG" data-pswp-width="3024px" data-pswp-height="4043px">
+            <img src="./images/journey/journey_3.JPG" class="w-100 shadow-1-strong rounded mb-4"
+              alt="Mountains in the Clouds" />
+          </a>
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <a href="./images/journey/journey_6.JPG" data-pswp-width="1024px" data-pswp-height="756px">
+            <img src="./images/journey/journey_6.JPG" alt="" class="w-100 shadow-1-strong rounded mb-4" />
+          </a>
+          <a href="./images/journey/journey_7.JPG" data-pswp-width="1080px" data-pswp-height="2128px">
+            <img src="./images/journey/journey_7.JPG" alt="" class="w-100 shadow-1-strong rounded mb-4" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- PASTIMES ACTIVITIES -->
+  </main>
+
+  <script src="./bootstrap-5.3.1-dist/js/bootstrap.bundle.js"></script>
+  <script type="module" src="./main.js"></script>
+
 </body>
+
 </html>
