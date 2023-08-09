@@ -105,18 +105,31 @@ header{
     justify-content: center;
 }
 
-.active{
-    color: #E8DE2A !important;
-    background-color: #222529 !important;
-    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-}
-
 .nav-item .nav-link:hover{
     color: #E8DE2A !important;
 }
 
 .pswp--custom-bg {
     --pswp-bg: #000000;
+    z-index: 9999999;
+}
+
+.navbar-toggler-icon{
+    background-color: #c4cfde;
+}
+
+.navbar-toggler{
+    border: 1px solid #878e99;
+}
+
+.nav-link{
+    color: #878e99 !important;
+}
+
+.active{
+    color: #E8DE2A !important;
+    background-color: #222529 !important;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
 }
 
 
