@@ -111,8 +111,6 @@ function addObserver(el, options){
   }, options)
   observer.observe(el)
 }
-// Example usages:
-scrollTrigger('.intro-text')
 
 scrollTrigger('.scroll-reveal', {
   rootMargin: '-200px',
