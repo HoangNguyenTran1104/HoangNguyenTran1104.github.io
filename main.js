@@ -93,17 +93,17 @@ function addObserver(el, options){
       if(options.cb){
           options.cb(el)
       }else{
-          entry.target.classList.add('active')
+          entry.target.classList.add('active_anm')
       }
       return
   }
-  let observer = new IntersectionObserver((entries, observer) => { //this takes a callback function which receives two arguments: the elemts list and the observer instance
+  let observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
           if(entry.isIntersecting){
               if(options.cb){
                   options.cb(el)
               }else{
-                  entry.target.classList.add('active')
+                  entry.target.classList.add('active_anm')
               }
               observer.unobserve(entry.target)
           }
