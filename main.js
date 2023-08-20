@@ -126,3 +126,16 @@ scrollTrigger('.loader', {
   }
 })
 /** Animation */
+
+/** Contact */
+const cvBtn = document.getElementById('cv-btn') // CV button
+const ctBtn = document.getElementById('ct-btn') // CONTACT button
+
+const notification = ()=>{
+  return alert("I can't update my personal information during this time.\nHave a good day.")
+}
+
+cvBtn.onclick =  function(){notification()}
+ctBtn.onclick =  function(){notification()}
+
+/**Contact */
